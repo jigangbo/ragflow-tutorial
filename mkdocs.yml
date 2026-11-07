@@ -1,0 +1,46 @@
+site_name: "RAGFlow 从入门到精通"
+site_description: "RAGFlow v0.27.2 系统性教程：从零基础到源码级精通"
+site_url: "https://jigangbo.github.io/ragflow-tutorial/"
+docs_dir: "tutorial"
+site_dir: "site"
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang: [zh, en]
+      separator: '[\s\u200b\-]'
+  - awesome-pages
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - toc:
+      permalink: true
