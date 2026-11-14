@@ -1,0 +1,33 @@
+/* ===== 自定义布局：三栏贴边 + 内容自适应拉宽 =====
+   左侧导航贴最左 · 右侧大纲贴最右 · 中间内容占满剩余空间 */
+
+/* 1. 解除 Material 默认的 61rem 居中栅格上限 */
+.md-grid {
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 0.8rem;
+}
+
+/* 2. 中间内容列拉伸占满剩余宽度 */
+.md-content {
+  max-width: none;
+}
+
+/* 宽屏下正文与两侧栏保留呼吸空间 */
+.md-content__inner {
+  padding-inline: 1.2rem;
+}
+
+/* 3. 超宽屏（≥2000px）：三栏仍贴边，仅给正文一个可读上限并居中 */
+@media (min-width: 125em) {
+  .md-content__inner {
+    max-width: 105rem;
+    margin-inline: auto;
+  }
+}
+
+/* 4. 代码块与表格在宽内容下水平滚动而非溢出 */
+.md-typeset pre > code,
+.md-typeset table:not([class]) {
+  max-width: 100%;
+}
