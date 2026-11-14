@@ -1,4 +1,4 @@
-# 环境搭建与首次运行
+# 第 3 章 环境搭建与首次运行
 
 > 难度：🟢 入门 · 建议 40 分钟 · 目标：Docker 启动 RAGFlow，注册账号，配置好一个 LLM。
 
@@ -43,7 +43,7 @@ docker logs -f docker-ragflow-cpu-1
 # 看到 ASCII 大字 "RAGFlow" banner 即启动成功，按 Ctrl+C 退出日志（不影响服务）
 ```
 
-启动失败先看这一行日志定位组件：数据库连不上 / ES 超时 / 端口占用是三大常见原因（详见 [11 运维与排障](11-operations.md)）。
+启动失败先看这一行日志定位组件：数据库连不上 / ES 超时 / 端口占用是三大常见原因（详见 [11 运维与排障](../part3-mastery/11-operations.md)）。
 
 ## 4. 首次登录
 
@@ -102,6 +102,6 @@ docker compose down -v               # ⚠️ 连数据卷一起删（全部知�
 | Go 后端 | 使用 `docker-compose-go.yml`（`.env-go`），Go API 端口 9384 | 体验 Go 栈 |
 | 开 MCP Server | 主服务 command 加 `--enable-mcpserver`（默认 9382） | 给 Claude 等 MCP 客户端用 |
 | 代码执行沙箱 | profile 加 `,sandbox`，需 gVisor | Agent 里跑代码 |
-| 从源码跑 | 见 [10 源码开发与贡献](10-development.md) | 二次开发 |
+| 从源码跑 | 见 [10 源码开发与贡献](../part3-mastery/10-development.md) | 二次开发 |
 
 > 进阶线索：compose 服务矩阵与 profile 机制全解见 [project-analysis/08-deployment-and-ecosystem.md 第 1 节。

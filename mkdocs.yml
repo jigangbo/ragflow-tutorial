@@ -7,14 +7,17 @@ site_dir: "site"
 theme:
   name: material
   language: zh
+  font: false # 必须禁用 Google Fonts（国内不可达且阻塞渲染），使用系统字体栈
   palette:
     - scheme: default
       primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: 切换到深色模式
     - scheme: slate
       primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
@@ -47,3 +50,6 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/pager.js

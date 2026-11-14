@@ -1,4 +1,4 @@
-# API 与 SDK 编程
+# 第 6 章 API 与 SDK 编程
 
 > 难度：🟡 进阶 · 建议 45 分钟 · 目标：用 Python SDK / REST API 完成知识库全生命周期管理。
 

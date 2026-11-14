@@ -1,4 +1,4 @@
-# 知识库实战
+# 第 4 章 知识库实战
 
 > 难度：🟢 入门 · 建议 40 分钟 · 目标：建好一个能被高质量检索的知识库，并看懂解析配置每一项。
 
@@ -44,7 +44,7 @@
 | Chunk token number | 512 | 块越大上下文越全但精度降；FAQ 类可调小 |
 | delimiter | `\n` | 分句符，支持自定义 |
 | **Layout recognition** | DeepDOC | PDF 解析后端：`DeepDOC`（本地视觉模型）/ `Naive`（纯文本，快但不识别版面）/ `MinerU`、`Docling`、`PaddleOCR` 等外部引擎 |
-| Extract knowledge graph | 关 | 开启后构建 GraphRAG（见 [08 高级特性](08-advanced-features.md)） |
+| Extract knowledge graph | 关 | 开启后构建 GraphRAG（见 [08 高级特性](../part2-advanced/08-advanced-features.md)） |
 | RAPTOR | 关 | 构建摘要树，利于全局性问题 |
 | Auto-keyword / Auto-question | 0 | LLM 为每块抽取 N 个关键词/生成 N 个问题，提升召回 |
 | Extract metadata / TOC | 关 | LLM 抽元数据 / 生成目录 |

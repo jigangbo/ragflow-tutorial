@@ -31,3 +31,40 @@
 .md-typeset table:not([class]) {
   max-width: 100%;
 }
+
+/* ===== 5. 文末上一页/下一页卡片按钮 ===== */
+.dsh-pager {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 2.2rem;
+}
+.dsh-pager__btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+.dsh-pager__btn:hover {
+  border-color: var(--md-accent-fg-color);
+}
+.dsh-pager__btn--next {
+  margin-left: auto;
+  text-align: right;
+}
+.dsh-pager__dir {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+.dsh-pager__title {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+.dsh-pager__btn--off {
+  opacity: 0.45;
+  pointer-events: none;
+}
+

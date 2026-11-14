@@ -1,0 +1,8 @@
+title: 第一篇 入门篇：从零跑通 RAGFlow
+nav:
+  - index.md
+  - 01-background.md
+  - 02-meet-ragflow.md
+  - 03-setup.md
+  - 04-knowledge-base.md
+  - 05-chat-and-search.md
